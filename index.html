@@ -10,9 +10,11 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 </head>
-<body>
-  <h1>Apply to be a tree planter</h1>
-  <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+<body class="wrapper">
+  <header>
+    <h1>Apply to be a tree planter</h1>
+    <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+  </header>
   <form class="push-0" method="POST" action="https://formspree.io/caud0001@algonquinlive.com">
     <h2>Personal details</h2>
     <div>
@@ -49,10 +51,11 @@
       <label for="email">Email</label>
       <input id="email" type="email" name="email" required>
     </div>
-    <div>
+    <div class="push">
       <label for="phone-number">Phone number (optional)</label>
       <input id="phone-number" name="phone-number">
     </div>
+    <hr>
     <h2>Address</h2>
     <div>
       <label for="address">Street address</label>
@@ -62,10 +65,11 @@
       <label for="city">City</label>
       <input id="city" name="city">
     </div>
-    <div>
+    <div class="push">
       <label for="postal-code">Postal code</label>
       <input id="postal-code" name="postal-code">
     </div>
+    <hr>
     <div>
       <label for="province">Province</label>
       <select id="province" name="province">
@@ -86,63 +90,116 @@
       </select>
     </div>
     <div>
-      <label for="interests">What activities are you interested in helping with?</label>
-      <select id="interests" name="interests">
-        <option>Digging holes</option>
-        <option>Getting dirty</option>
-        <option>Lifting heavy objects</option>
-        <option>Driving people</option>
-        <option>Transporting trees</option>
-        <option>Taking photos</option>
-        <option>Online publishing</option>
-        <option>Managing people</option>
-      </select>
+      <legend for="interests">What activities are you interested in helping with?</legend>
+      <div>
+        <input id="digging" type="checkbox">
+        <label for="digging">Digging holes</label>
+      </div>
+      <div>
+        <input id="dirty" type="checkbox">
+        <label for="dirty">Getting dirty</label>
+      </div>
+      <div>
+        <input id="lifting" type="checkbox">
+        <label for="lifting">Lifting heavy objects</label>
+      </div>
+      <div>
+        <input id="driving" type="checkbox">
+        <label for="driving">Driving people</label>
+      </div>
+      <div>
+        <input id="transport" type="checkbox">
+        <label for="transport">Transporting trees</label>
+      </div>
+      <div>
+        <input id="photos" type="checkbox">
+        <label for="photos">Taking photos</label>
+      </div>
+      <div>
+        <input id="online" type="checkbox">
+        <label for="online">Online publishing</label>
+      </div>
+      <div>
+        <input id="managing" type="checkbox">
+        <label for="managing">Managing people</label>
+      </div>
     </div>
     <div>
-      <label for="experience">Do you have any experience with the following?</label>
-      <select id="experience" name="experience">
-        <option>Shovels</option>
-        <option>Hand-held GPS</option>
-        <option>Writing & blogging</option>
-        <option>Photography</option>
-        <option>Trail & hill climbing</option>
-        <option>Bush craft</option>
-        <option>ATVs</option>
-        <option>Plant identification</option>
-        <option>Special event planning</option>
-        <option>Speaking to groups</option>
-      </select>
+      <legend for="experience">Do you have any experience with the following?</legend>
+      <div>
+        <input id="shovels" type="checkbox">
+        <label for="shovels">Shovels</label>
+      </div>
+      <div>
+        <input id="gps" type="checkbox">
+        <label for="gps">Hand-held GPS</label>
+      </div>
+      <div>
+        <input id="blog" type="checkbox">
+        <label for="blog">Writing & blogging</label>
+      </div>
+      <div>
+        <input id="pictures" type="checkbox">
+        <label for="pictures">Photography</label>
+      </div>
+      <div>
+        <input id="climb" type="checkbox">
+        <label for="climb">Trail & hill climbing</label>
+      </div>
+      <div>
+        <input id="craft" type="checkbox">
+        <label for="craft">Bush craft</label>
+      </div>
+      <div>
+        <input id="atvs" type="checkbox">
+        <label for="atvs">ATVs</label>
+      </div>
+      <div>
+        <input id="plant" type="checkbox">
+        <label for="plant">Plant identification</label>
+      </div>
+      <div>
+        <input id="event" type="checkbox">
+        <label for="event">Special event planning</label>
+      </div>
+      <div class="push">
+        <input id="speak" type="checkbox">
+        <label for="speak">Speaking to groups</label>
+      </div>
     </div>
-    <div>
-      <label for="valid-drivers-license">Do you have a valid driver’s license?</label>
-      <select id="valid-drivers-license" name="valid-drivers-lisence">
-        <option>Yes</option>
-        <option>No</option>
-      </select>
-    </div>
-    <div>
-      <label for="vehicle">Do you have a pick-up truck you’d be willing to use?</label>
-      <select id="vehicle" name="vehicle">
-        <option>Yes</option>
-        <option>No</option>
-      </select>
-    </div>
-    <div>
-      <label for="first-aid">Do you have up-to-date first-aid certification?</label>
-      <select id="first-aid" name="first-aid">
-        <option>Yes</option>
-        <option>No</option>
-      </select>
-    </div>
+    <hr>
+    <fieldset>
+      <legend for="valid-drivers-license">Do you have a valid driver’s license?</legend>
+      <input id="yes" type="radio" name="answer">
+      <label for="yes">Yes</label>
+      <input id="no" type="radio" name="answer">
+      <label for="no">No</label>
+    </fieldset>
+    <fieldset>
+      <legend for="vehicle">Do you have a pick-up truck you’d be willing to use?</legend>
+      <input id="yes2" type="radio" name="answer2">
+      <label for="yes2">Yes</label>
+      <input id="no2" type="radio" name="answer2">
+      <label for="no2">No</label>
+    </fieldset>
+    <fieldset class="push">
+      <legend for="first-aid">Do you have up-to-date first-aid certification?</legend>
+      <input id="yes3" type="radio" name="answer3">
+      <label for="yes3">Yes</label>
+      <input id="no3" type="radio" name="answer3">
+      <label for="no3">No</label>
+    </fieldset>
+    <hr>
     <div>
       <label for="details">Please let us know any comments or questions you may have.</label>
       <textarea id="details" name="message"></textarea>
     </div>
     <div>
-    <button type="submit">Apply</button>
+    <button class="btn" type="submit">Apply</button>
     </div>
   </form>
-  <p>© Tree Hugger International Organization</p>
-
+  <footer>
+    <p>© Tree Hugger International Organization</p>
+  </footer>
 </body>
 </html>

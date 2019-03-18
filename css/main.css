@@ -2,3 +2,19 @@ html {
   font-family: "Noto Serif", serif;
 
 }
+
+header,
+footer {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+input,
+textarea,
+select, {
+  border: 1px solid #6e8c62;
+}
+
+hr {
+  border: 1px solid #70ad55;
+}
