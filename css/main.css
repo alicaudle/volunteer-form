@@ -8,10 +8,49 @@ footer {
   color: #fff;
 }
 
+p {
+  margin: 0;
+}
+
+p:nth-child(3),
+p:nth-child(4) {
+  padding-top: 2px;
+}
+
+label {
+  padding-bottom: 3px;
+}
+
+.phone {
+  padding-bottom: 15px;
+}
+
+.postal {
+  padding-bottom: 25px;
+}
+
+.exp {
+  padding-bottom: 2px;
+}
+
+.license {
+  padding-top: 24px;
+}
+
+.answer {
+  padding-bottom: 8px;
+}
+
+.text {
+  padding-bottom: 10px;
+}
+
 input,
 textarea,
 select {
-  border: 1px solid #6e8c62;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #6e8c62;
 }
 
 .opt {
@@ -19,10 +58,19 @@ select {
 }
 
 hr {
-  border: 1px solid #70ad55;
+  border: .5px solid #70ad55;
 }
 
 .btn {
   background-color: #6e8c62;
   border: 1px solid #6e8c62;
+  width: 130px;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .nickname {
+
+  }
+
 }
