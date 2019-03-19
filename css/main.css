@@ -1,6 +1,5 @@
 html {
   font-family: "Noto Serif", serif;
-
 }
 
 header,
@@ -15,6 +14,15 @@ select {
   border: 1px solid #6e8c62;
 }
 
+.opt {
+  color: #70ad55;
+}
+
 hr {
   border: 1px solid #70ad55;
+}
+
+.btn {
+  background-color: #6e8c62;
+  border: 1px solid #6e8c62;
 }
