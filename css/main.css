@@ -8,49 +8,20 @@ footer {
   color: #fff;
 }
 
-p {
-  margin: 0;
-}
-
-p:nth-child(3),
-p:nth-child(4) {
-  padding-top: 2px;
-}
-
-label {
-  padding-bottom: 3px;
-}
-
-.phone {
-  padding-bottom: 15px;
-}
-
-.postal {
-  padding-bottom: 25px;
-}
-
-.exp {
-  padding-bottom: 2px;
-}
-
-.license {
-  padding-top: 24px;
-}
-
-.answer {
-  padding-bottom: 8px;
-}
-
-.text {
-  padding-bottom: 10px;
-}
-
 input,
 textarea,
-select {
-  border-width: 2px;
-  border-style: solid;
+select,
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
   border-color: #6e8c62;
+}
+
+textarea {
+  height: 10em;
+}
+
+fieldset {
+  border: none;
 }
 
 .opt {
@@ -69,8 +40,8 @@ hr {
 
 @media only screen and (min-width: 60em) {
 
-  .nickname {
-
+  .btn {
+    background-color: #6e8c62;
   }
 
 }
